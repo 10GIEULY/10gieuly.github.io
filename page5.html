@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>C'est Maintenant</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+<script>
+  var passwords = ["Argyle", "argyle", "ARGYLE"]; // Liste des mots de passe autorisée 
+
+  var password = prompt("Entrez le mot de passe:");
+
+  if (!passwords.includes(password)) {
+    alert("Accès refusé. Mot de passe incorrect.");
+    window.location.href = "page4.html";// redirection si le mdp est faux
+  }
+</script>
+
+<header>
+  <h1>Tu commences à te sentir mal</h1>
+  <nav>
+    <ul>
+      <li><a href="pagespaceinvader.html">Accueil</a></li>
+      <li><a href="page4.html">Gallerie</a></li>
+      <li><a href="page4.html">Cherche</a></li>
+      <li><a href="page4.html">Trouve</a></li>
+    </ul>
+  </nav>
+</header>
+
+<div class="content">
+  <h2>Es tu prêt à nous rejoindre ?</h2>
+  <p>Seulement les élus pourront réussir à intégrer la communauté, et donc d'arriver au bout de ce tunnel, je crois en vous chers disciples, prouvez de votre foi et de votre sagesse, et nous vous récupérerons de votre malheur</p>
+</div>
+<p>Il faut parfois revenir en arrière pour pouvoir aller de  l'avant.</p>
+
+</body>
+</html>
