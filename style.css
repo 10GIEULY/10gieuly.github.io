@@ -1,0 +1,53 @@
+
+   
+body {
+  background-color: #1a1a1a;
+  color: #f5f5f5; /* Couleur écrue pour la police */
+  font-family: 'Gothic', sans-serif;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 0;
+  text-align: center;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: #ccc; /* Couleur des liens dans la barre de navigation */
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  color: #f5f5f5; /* Couleur des liens au survol */
+}
+
+.content {
+  padding: 20px;
+}
+button {
+  background: transparent;
+  border: none !important;
+}
+
+#invisible-button {
+  background-color: transparent;
+  border: none;
+  color: transparent;
+  padding: 0;
+  cursor: pointer;
+  outline: none;
+
+ 
+}
