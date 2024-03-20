@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Gallerie</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<script>
+  var passwords = ["Everest", "everest", "Monteverest", "monteverest", "Mont Everest", "Mont everest", "mont everest"]; // Liste des mots de 
+
+  var password = prompt("Entrez le mot de passe :");
+
+  if (!passwords.includes(password)) {
+    // redirige vers la page d'accueil si le mot de passe est incorrect
+    window.location.href = "accueil.html";
+  } else {
+    // Dynamically modify menu links if password is correct
+    var allLinks = document.querySelectorAll('nav ul li a');
+    
+    allLinks.forEach(function(link) {
+      if (link.getAttribute('href') === 'page3.html') {
+        link.setAttribute('href', 'newpage.html');
+      }
+    });
+  }
+</script>
+
+<header>
+  <h1>???</h1>
+  <nav>
+    <ul>
+      <li><a href="accueil.html">Accueil</a></li>
+      <li><a href="page2.html">Gallerie</a></li>
+      <li><a href="page3.html">Cherche</a></li>
+    </ul>
+  </nav>
+</header>
+  
+<div class="content">
+  <h2>Bien joué!!!</h2>
+  <p>Ce n'est pas la fin, la difficulté va s'intensifier, tu n'as pas encore trouvé la bonne personne en qui croire, ce n'est pas un jeu, c'est une passerelle pour integrer la communauté </p>
+  <p> dijggsf, o=p</p>
+</div>
+
+<!-- Add more content here -->
+
+<script src="script.js"></script>
+</body>
+</html>
+
+  <html>
+    <head>
+        <title>Ma Page avec une Image</title>
+    </head>
+    <body>
+
+
+        <img  src="https://images.midilibre.fr/api/v1/images/view/5b47b77a3e45463658680e1b/large/image.jpg" width="250" height="150">
+    </body>
+    </html>
+
+    <img src="https://cdn-europe1.lanmedia.fr/var/europe1/storage/images/europe1/sante/repousser-l-heure-de-son-reveil-une-fausse-bonne-idee-673594/13498840-1-fre-FR/Repousser-l-heure-de-son-reveil-une-fausse-bonne-idee.jpg" width="250" height="150">
+    </body>
+    </html>
+
+<img src="https://i.ytimg.com/vi/MO52s6er__g/sddefault.jpg" width="250" height="150">
+</body>
+</html>
+
+<img src="https://media.carrefour.fr/medias/a569df5110a9345685918ebb2e102c46/p_1500x1500/05000159492997-h1n1-s13.jpg" width="250" height="150">
+</body>
+</html>
+
+<img src="https://enseignants.nathan.fr/sites/default/files/ouvrage/9782091729053.JPG" width="250" height="150">
+</body>
+</html>
+
+<img src="https://img.lamontagne.fr/oEDIf7jCjTjuU6uNphaNBlrHscwlJOgE0eougSCoLxc/fit/657/438/sm/0/bG9jYWw6Ly8vMDAvMDAvMDYvNTQvMTQvMjAwMDAwNjU0MTQ5Mw.jpg" width="250" height="150">
+</body>
+</html>
+
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTj7MMQ1OOChvEkLecauKCFVLVwdknEimRENw&usqp=CAU" width="250" height="150">
+</body>
+</html>
+
+<img src="https://web.myassoc.org/img/Lions_E2uYP6mbNv79/1068_36b0e63cc/medias/full-f58e123ae16e7e2b8cba55d6fa771536.jpeg" width="250" height="150">
+</body>
+</html>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
