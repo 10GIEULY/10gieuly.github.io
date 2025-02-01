@@ -1,15 +1,12 @@
 const yesBtn = document.querySelector(".yes-btn");
 const noBtn = document.querySelector(".no-btn");
 const question = document.querySelector(".question");
-const gif = document.querySelector(".gif");
 
-// Change text and gif when the Yes button is clicked
+// Change text and hide the No button when the Yes button is clicked
 yesBtn.addEventListener("click", () => {
-    question.innerHTML = "Yes, trop cool";
-    gif.src = "https://www.google.com/url?sa=i&url=https%3A%2F%2Fgiphy.com%2Fexplore%2Fdanse-de-la-joie&psig=AOvVaw0pc6MViLpNpHNH_Hjh0sjg&ust=1738529527148000&source=images&cd=vfe&opi=89978449&ved=0CBMQjRxqFwoTCKCR8quto4sDFQAAAAAdAAAAABAE";
-
-    // Hide the No button
-    noBtn.style.display = "none";
+    question.innerHTML = "Yes, trop cool !";
+    noBtn.style.display = "none"; // Fait disparaître le bouton "Non"
+    gif.scr=  "https://media.giphy.com/media/zrxazUScjhxo4/giphy.gif?cid=790b7611oqgmnom9fzs33o1zfk9xr6nqb74zav21dzsueuuk&ep=v1_gifs_search&rid=giphy.gif&ct=g"
 });
 
 // Make the No button move randomly on hover
@@ -22,10 +19,15 @@ noBtn.addEventListener("mouseover", () => {
     const maxX = wrapperRect.width - noBtnRect.width;
     const maxY = wrapperRect.height - noBtnRect.height;
 
-    // Ensure randomX and randomY are within the wrapper bounds
-    const randomX = Math.min(Math.floor(Math.random() * maxX), maxX);
-    const randomY = Math.min(Math.floor(Math.random() * maxY), maxY);
+    // Generate random positions with a larger range
+    const randomX = Math.floor(Math.random() * (maxX * 2)) - maxX / 2;
+    const randomY = Math.floor(Math.random() * (maxY * 2)) - maxY / 2;
 
-    noBtn.style.left = randomX + "px";
-    noBtn.style.top = randomY + "px";
+    // Ensure the button stays within the wrapper bounds
+    const boundedX = Math.max(0, Math.min(randomX, maxX));
+    const boundedY = Math.max(0, Math.min(randomY, maxY));
+
+    noBtn.style.position = "absolute";
+    noBtn.style.left = boundedX + "px";
+    noBtn.style.top = boundedY + "px";
 });
