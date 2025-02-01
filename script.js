@@ -1,12 +1,18 @@
 const yesBtn = document.querySelector(".yes-btn");
 const noBtn = document.querySelector(".no-btn");
 const question = document.querySelector(".question");
+function showGif(gifUrl) {
+    gif.src = gifUrl; // Définit l'URL du GIF
+    gif.style.display = "block"; // Affiche le GIF
+}
+
+
 
 // Change text and hide the No button when the Yes button is clicked
 yesBtn.addEventListener("click", () => {
     question.innerHTML = "HAHAHAHAHAHAHAAAAAAA Je suis trop fort, youpi youpi youpi !";
     noBtn.style.display = "none"; // Fait disparaître le bouton "Non"
-    gif.scr=  "https://media.giphy.com/media/zrxazUScjhxo4/giphy.gif?cid=790b7611oqgmnom9fzs33o1zfk9xr6nqb74zav21dzsueuuk&ep=v1_gifs_search&rid=giphy.gif&ct=g"
+    showGif("https://media.giphy.com/media/zrxazUScjhxo4/giphy.gif?cid=790b7611oqgmnom9fzs33o1zfk9xr6nqb74zav21dzsueuuk&ep=v1_gifs_search&rid=giphy.gif&ct=g")
 });
 
 // Make the No button move randomly on hover
