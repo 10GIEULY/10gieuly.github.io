@@ -48,9 +48,11 @@
     <div>Trombones : <span id="count">0</span></div>
     <div>Argent : <span id="money">0</span> €</div>
     <div>Fil de fer : <span id="wire">0</span></div>
-
-    <div>/s : <span id="perSecond">0</span></div>
+    <div>Trombones par secondes: <span id="perSecond">0</span></div>
+    <div>Acheteurs fil : <span id="wireBuyers">0</span></div>
   </div>
+
+  
 
   <button id="sellBtn">Vendre 1 trombone pour 1 $</button>
 
@@ -76,7 +78,7 @@
       <button id="buy-seller">Acheter</button>
     </div>
 
-    <!-- Bouton pour achter du fil de fer -->
+    <!-- Bouton pour acheter du fil de fer -->
     <div class="item">
         <div>Fil de fer</div>
         <div>Coût : <span id="cost-wire">100</span> €</div>
@@ -87,13 +89,23 @@
 
     
   </div>
-  <button onclick="document.getElementById('background-audio').play()">Lancer la musique</button>
+
+  <div id="upgradePanel" style="position: fixed; top: 60px; left: 20px; background: #fff; border: 2px solid #000; padding: 10px; display: none; z-index: 1000;">
+    <p>Vous pouvez gagner un point dans une catégorie :</p>
+    <button onclick="gainPoint('mémoires')">Mémoires</button>
+    <button onclick="gainPoint('puissance')">Puissance de calcul</button>
+    <button onclick="gainPoint('confiance')">Confiance</button>
+    <div>Confiance : <span id="trustDisplayer">0</span></div>
+    <div>Puissance : <span id="processorDisplayer">0</span></div>
+    <div>Mémoire : <span id="memoryDisplayer">0</span></div>
+
+    <div>Opérations: <span id="operationsDoneDisplayer">0 / <span id = "maxOperationsDisplayer">1000</span></div>
+    
+  </div>
 
   <audio id="background-audio" loop>
     <source src="musique.mp3" type="audio/mpeg">
   </audio>
-
-    
   <script src="script.js"></script>
 </body>
 </html>
